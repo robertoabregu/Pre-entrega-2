@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-top a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-top a:hover {
+    color: black;
+    font-weight: 900;
+}
+
+.navbar-top a:visited {
+    color: black;
+}
+
+.navbar-top {
+    text-align: center;
+    background-color: #FFF;
+    color: #000;
+    font-size: 1rem;
+    font-family: Nunito;
+    font-weight: 600;
+    padding: 0 10%;
+}
+
+.navbar-top ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-left: 0;
+}
+
+.navbar-top li {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.navbar-top li img {
+    height: 4.5rem;
+    vertical-align: middle;
+    margin: .5rem;
+}
+
+main .homepage {
+    margin: 0;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.logo-full {
+    position: absolute;
+    right: 9%;
+    bottom: 4%;
+    width: 7%;
+}
+
+.shadowfax {
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Stalinist One;
+    width: 7%;
+}
+
+.content-gallery {
+    width: 100vw;
+    height: auto;
+    background-image: url("../images/galleries-background1.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+    padding: 10rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 12.5rem;
+    font-family: Bebas Neue;
+    font-weight: 200;
+    line-height: 12rem;
+}
+
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Bebas Neue;
+    font-weight: 200;
+}
+
+.album {
+    display: table;
+    width: 70vw;
+    height: 70%;
+    margin: 12rem auto;
+    text-align: center;
+}
+
+.album img {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.7rem;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background-color: #000;
+    padding: 2rem;
+}
+
+footer .logo {
+    width: 5rem;
+    margin: 0.5rem;
+}
+
+footer .navbar-bottom {
+    text-align: center;
+    font-size: 1rem;
+    color: #FFF;
+    font-family: Nunito;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    margin: 1rem;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 2rem;
+    vertical-align: middle;
+}
+
+hr {
+    display: inline-block;
+    margin: 2rem;
+    width: 70vw;
+    text-align: center;
+}
+
+.social img {
+    width: 1.5rem;
+}
+
+.navbar-bottom a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar-bottom a:hover {
+    color: #FFF;
+    font-weight: 900;
+}
+
+.navbar-bottom a:visited {
+    color: #FFF;
+}
+
+.legal {
+    color: #FFF;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: Nunito;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.content-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: auto;
+    background-image: url("../images/videos-background.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.video-player {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin: 12rem auto 8rem;
+}
+
+.lambo {
+    position: absolute;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Bebas Neue;
+    font-weight: 200;
+    left: -3rem;
+    top: 5rem;
+}
+
+.aventador {
+    position: absolute;
+    color: #FFF;
+    font-size: 4rem;
+    font-family: Bebas Neue;
+    left: -2rem;
+    top: 7.5rem;
+
+}
+
+iframe {
+    width: 100%;
+    height: 32.5rem;
+    margin: auto;
+}
+
+.videos-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95vw;
+    height: 60%;
+    margin-bottom: 8rem;
+}
+
+.wrap1:nth-child(1),
+.wrap2:nth-child(2) {
+    margin-bottom: 5%;
+}
+
+.videos-details img {
+    width: 40%;
+}
+
+.videos-details .aventador-interior {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+}
+
+.videos-details .aventador-engine {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    width: 40%;
+}
+
+p {
+    color: #000;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+}
+
+.videos-details h2 {
+    color: #000;
+}
+
+.content-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-image: url("../images/about_us_background.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.about-us-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 95vw;
+    height: 60%;
+    margin: 10% auto 5%;
+}
+
+.about-us-details img {
+    width: 40%;
+}
+
+.about-us1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    color: #FFF;
+    padding: 2rem;
+}
+
+.about-us1 h2 {
+    padding-bottom: 5%;
+}
+
+.about-us-1p {
+    color: #FFF;
+}
+
+.about-us-wrap1:nth-child(1),
+.about-us1:nth-child(2) {
+    margin-bottom: 5%;
+}
+
+.about-us2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    width: 40%;
+    padding: 2rem;
+}
+
+.our-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 77%;
+    color: #000;
+    margin-bottom: 5rem;
+}
+
+.our-teams img {
+    width: 100%;
+}
+
+.our-teams h2 {
+    color: #000;
+    margin: 2rem;
+}
+
+.our-teams p {
+    text-align: center;
+    width: 100%;
+    margin: 2rem;
+}
+
+.content-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-image: url("../images/contact_us_background.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.map {
+    width: 80%;
+    margin-top: 10%;
+}
+
+.contact-us-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 5%;
+}
+
+.contact-us-data .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-us-data .phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-us h4 {
+    color: #000;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.contact-us p {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: 300;
+    padding: .1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: 5%;
+}
+
+.content-contact-us h3 {
+    color: #000;
+    font-size: 3rem;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+
+.contact-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact-data .first-name,
+.last-name,
+.phone,
+.email,
+.city,
+.state {
+    width: 48%;
+    margin-bottom: 1.5rem;
+}
+
+.contact-data input {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    background: #D9D9D9;
+    border: #D9D9D9
+}
+
+label {
+    display: flex;
+    color: #000;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: .3rem;
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.contact-message input {
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    background: #D9D9D9;
+    border: #D9D9D9;
+    justify-content: start;
+}
+
+.contact-message label {
+    display: flex;
+    color: #000;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    font-weight: 300;
+    width: 100%;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 1rem;
+}
+
+.contact-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.submit {
+    background-color: #D9D9D9;
+    border: #D9D9D9;
+    height: 1.5rem;
+    width: 6rem;
+}
