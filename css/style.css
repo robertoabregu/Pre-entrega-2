@@ -246,7 +246,6 @@ hr {
     font-family: Bebas Neue;
     left: -2rem;
     top: 7.5rem;
-
 }
 
 iframe {
@@ -297,7 +296,6 @@ iframe {
     font-weight: 500;
     font-size: 1.4rem;
     margin-bottom: 0;
-
 }
 
 .videos-details h2 {
@@ -690,9 +688,6 @@ label {
     iframe {
         height: 40rem;
     }
-
-
-
 }
 
 @media (max-width: 767px) {
