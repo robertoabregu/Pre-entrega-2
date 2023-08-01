@@ -71,15 +71,6 @@
     vertical-align: middle;
 }
 
-#carouselAutoplaying {
-    height: calc(100vh - 88px);
-}
-
-.carousel-fade .carousel-item {
-    display: flex;
-    bottom: 5rem;
-}
-
 .gallery {
     padding: 0 15%;
     background-image: url("../images/galleries-background1.jpg");
