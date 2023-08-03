@@ -1,0 +1,66 @@
+.navbar-top a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-top a:hover {
+    color: black;
+    font-weight: 900;
+}
+
+.navbar-top a:visited {
+    color: black;
+}
+
+.homepage {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: calc(100vh - 88px);
+    overflow: hidden;
+}
+
+.navbar-top {
+    text-align: center;
+    background-color: #FFF;
+    color: #000;
+    font-size: .8rem;
+    font-family: Nunito;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-top ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-left: 0;
+}
+
+.navbar-top li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.navbar-top li img {
+    height: 4.5rem;
+    vertical-align: middle;
+    margin: .5rem;
+}
+
+.container-fluid {
+    display: flex;
+    margin: 0;
+    justify-content: right;
+}
+
+.navbar-logo {
+    display: none;
+    height: 4.5rem;
+    vertical-align: middle;
+}

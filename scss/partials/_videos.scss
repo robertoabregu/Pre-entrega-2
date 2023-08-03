@@ -1,0 +1,96 @@
+.videos {
+    padding: 0 15%;
+    background-image: url("../images/videos-background.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.content-videos {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 8rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.video-player {
+    position: relative;
+    grid-row: 1;
+}
+
+.lambo {
+    position: absolute;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Bebas Neue;
+    font-weight: 200;
+    left: -3rem;
+    top: 5rem;
+}
+
+.aventador {
+    position: absolute;
+    color: #FFF;
+    font-size: 4rem;
+    font-family: Bebas Neue;
+    left: -2rem;
+    top: 7.5rem;
+}
+
+iframe {
+    width: 100%;
+    height: 44rem;
+}
+
+.videos-details {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 3rem;
+    justify-content: space-evenly;
+}
+
+.videos-details img {
+    width: 50%;
+}
+
+.video-img1b,
+.video-img2b {
+    display: none;
+}
+
+.videos-details .aventador-interior {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+}
+
+.videos-details .aventador-engine {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    width: 40%;
+}
+
+.interior {
+    text-align: left;
+}
+
+.videos-details p {
+    color: #000;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.videos-details h2 {
+    color: #000;
+}

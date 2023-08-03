@@ -1,0 +1,89 @@
+.about-us {
+    padding: 0 15%;
+    background-image: url("../images/about-us-background-2.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.content-about-us {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 7rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.about-us-details {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.content-about-us p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0;
+    color: #FFF;
+}
+
+.about-us-img1 {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+.about-us1 {
+    grid-row: 1;
+    grid-column: 2;
+    align-items: start;
+    color: #FFF;
+}
+
+.about-us2 {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: right;
+}
+
+.about-us-img2 {
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+}
+
+.our-teams {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    align-items: center;
+    color: #000;
+}
+
+.our-teams img {
+    grid-row: 2;
+    width: 100%;
+}
+
+.our-teams h2 {
+    grid-row: 1;
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.our-teams p {
+    grid-row: 3;
+    text-align: center;
+    width: 100%;
+}
