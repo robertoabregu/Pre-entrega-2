@@ -1,15 +1,17 @@
 .navbar-top a {
     color: #000;
     text-decoration: none;
-}
+    transition: 0.5s;
 
-.navbar-top a:hover {
-    color: black;
-    font-weight: 900;
-}
+    &:hover {
+        color: black;
+        font-weight: 900;
+        transform: scale(1.2);
+    }
 
-.navbar-top a:visited {
-    color: black;
+    &:visited {
+        color: black;
+    }
 }
 
 .homepage {
