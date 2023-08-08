@@ -5,76 +5,298 @@
     background-position: top;
     background-repeat: no-repeat;
     background-color: #FFF;
-}
 
-.content-contact-us {
-    display: grid;
-    grid-template-rows: auto;
-    row-gap: 6rem;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 10rem;
-}
+    .title {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        padding: 10rem 0 5rem;
 
-.map {
-    grid-row: 1;
-    width: 100%;
-}
+        @include screen-1200px {
+            padding: 5rem 0;
+        }
 
-.contact-us-data {
-    grid-row: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+        @include screen-820px {
+            padding: 5rem 0;
+        }
 
-.contact-us-data .address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-size: 12.5rem;
+            font-family: Bebas Neue;
+            font-weight: 200;
 
-.contact-us-data .phones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+            @include screen-1200px {
+                font-size: 9rem;
+            }
 
-.contact-us h4 {
-    color: #000;
-    font-size: 2rem;
-    font-family: Roboto;
-    font-weight: 600;
-    padding: .5rem;
-    margin: 0;
-}
+            @include screen-820px {
+                font-size: 5rem;
+            }
 
-.contact-us p {
-    color: #000;
-    font-size: 1.5rem;
-    font-family: Roboto;
-    font-weight: 300;
-    padding: .1rem;
-    margin: 0;
-}
+            @include screen-767px {
+                font-size: 4rem;
+            }
+        }
 
-.contact-form {
-    display: flex;
-    justify-self: center;
-    grid-row: 4;
-    width: 80%;
-}
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: Bebas Neue;
+            font-weight: 200;
 
-.form-title {
-    grid-row: 3;
-    color: #000;
-    font-size: 3rem;
-    font-family: Roboto;
-    font-weight: 600;
-    margin: 0;
+            @include screen-820px {
+                font-size: 2rem;
+            }
+
+            @include screen-767px {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .content-contact-us {
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 6rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10rem;
+
+        @include screen-990px {
+            row-gap: 4rem;
+        }
+
+        .map {
+            grid-row: 1;
+            width: 100%;
+
+            iframe {
+                width: 100%;
+                height: 44rem;
+
+                @include screen-1440px {
+                    width: 100%;
+                    height: 34rem;
+                }
+
+                @include screen-820px {
+                    height: 40rem;
+                }
+
+                @include screen-767px {
+                    width: 100%;
+                    height: 20rem;
+                }
+
+                @include screen-500px {
+                    width: 100%;
+                    height: 16rem;
+                }
+            }
+        }
+
+        .contact-us-data {
+            grid-row: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            @include screen-767px {
+                display: grid;
+                row-gap: 1rem;
+                grid-template-rows: auto;
+                color: #FFF;
+            }
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                @include screen-767px {
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                h4 {
+                    @include screen-767px {
+                        grid-row: 1;
+                        grid-column: 1 / span 2;
+                    }
+                }
+
+                p {
+                    @include screen-767px {
+                        grid-row: 2;
+                    }
+                }
+
+                .p1 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-end;
+                        grid-column: 1;
+                    }
+                }
+
+                .p2 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-start;
+                        grid-column: 2;
+                    }
+                }
+            }
+
+            .phones {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                @include screen-767px {
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                h4 {
+                    @include screen-767px {
+                        grid-row: 1;
+                        grid-column: 1 / span 2;
+                    }
+                }
+
+                p {
+                    @include screen-767px {
+                        grid-row: 2;
+                    }
+                }
+
+                .p1 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-end;
+                        grid-column: 1;
+                    }
+                }
+
+                .p2 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-start;
+                        grid-column: 2;
+                    }
+                }
+            }
+
+            .hours {
+                @include screen-767px {
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                h4 {
+                    @include screen-767px {
+                        grid-row: 1;
+                        grid-column: 1 / span 2;
+                    }
+                }
+
+                p {
+                    @include screen-767px {
+                        grid-row: 2;
+                    }
+                }
+
+                .p1 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-end;
+                        grid-column: 1;
+                    }
+                }
+
+                .p2 {
+                    @include screen-767px {
+                        display: flex;
+                        justify-content: flex-start;
+                        grid-column: 2;
+                    }
+                }
+            }
+
+            h4 {
+                @include screen-767px {
+                    padding: 0;
+                    color: #FFF
+                }
+            }
+
+            p {
+                @include screen-767px {
+                    padding: 0;
+                    color: #FFF
+                }
+            }
+        }
+
+        .form-title {
+            grid-row: 3;
+            color: #000;
+            font-size: 3rem;
+            font-family: Roboto;
+            font-weight: 600;
+            margin: 0;
+
+            @include screen-1200px {
+                font-size: 2rem;
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            justify-self: center;
+            grid-row: 4;
+            width: 80%;
+        }
+
+    }
+
+    p {
+        color: #000;
+        font-size: 1.5rem;
+        font-family: Roboto;
+        font-weight: 300;
+        padding: .1rem;
+        margin: 0;
+
+        @include screen-1200px {
+            font-size: 1rem;
+        }
+    }
+
+    h4 {
+        color: #000;
+        font-size: 2rem;
+        font-family: Roboto;
+        font-weight: 600;
+        padding: .5rem;
+        margin: 0;
+
+        @include screen-1200px {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 label {
@@ -83,6 +305,10 @@ label {
     font-size: 1.25rem;
     font-family: Roboto;
     font-weight: 300;
+
+    @include screen-1200px {
+        font-size: .9rem;
+    }
 }
 
 .contact-us input {

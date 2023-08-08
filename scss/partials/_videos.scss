@@ -5,92 +5,274 @@
     background-position: top;
     background-repeat: no-repeat;
     background-color: #FFF;
-}
 
-.content-videos {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 8rem;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 10rem;
-}
+    .title {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        padding: 10rem 0 5rem;
 
-.video-player {
-    position: relative;
-    grid-row: 1;
-}
+        @include screen-1200px {
+            padding: 5rem 0;
+        }
 
-.lambo {
-    position: absolute;
-    color: #FFF;
-    font-size: 2rem;
-    font-family: Bebas Neue;
-    font-weight: 200;
-    left: -3rem;
-    top: 5rem;
-}
+        @include screen-820px {
+            padding: 5rem 0;
+        }
 
-.aventador {
-    position: absolute;
-    color: #FFF;
-    font-size: 4rem;
-    font-family: Bebas Neue;
-    left: -2rem;
-    top: 7.5rem;
-}
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-size: 12.5rem;
+            font-family: Bebas Neue;
+            font-weight: 200;
 
-iframe {
-    width: 100%;
-    height: 44rem;
-}
+            @include screen-1200px {
+                font-size: 9rem;
+            }
 
-.videos-details {
-    grid-row: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    row-gap: 3rem;
-    justify-content: space-evenly;
-}
+            @include screen-820px {
+                font-size: 5rem;
+            }
 
-.videos-details img {
-    width: 50%;
-}
+            @include screen-767px {
+                font-size: 4rem;
+            }
+        }
 
-.video-img1b,
-.video-img2b {
-    display: none;
-}
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: Bebas Neue;
+            font-weight: 200;
 
-.videos-details .aventador-interior {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 40%;
-}
+            @include screen-820px {
+                font-size: 2rem;
+            }
 
-.videos-details .aventador-engine {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    text-align: right;
-    width: 40%;
-}
+            @include screen-767px {
+                font-size: 1.4rem;
+            }
+        }
+    }
 
-.interior {
-    text-align: left;
-}
+    .content-videos {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-gap: 8rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10rem;
 
-.videos-details p {
-    color: #000;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 1.4rem;
-    margin-bottom: 0;
-}
+        @include screen-767px {
+            row-gap: 5rem;
+        }
 
-.videos-details h2 {
-    color: #000;
+        @include screen-500px {
+            row-gap: 3rem;
+        }
+
+        .video-player {
+            position: relative;
+            grid-row: 1;
+
+            .lambo {
+                position: absolute;
+                color: #FFF;
+                font-size: 2rem;
+                font-family: Bebas Neue;
+                font-weight: 200;
+                left: -3rem;
+                top: 5rem;
+
+                @include screen-820px {
+                    font-size: 1.5rem;
+                }
+
+                @include screen-500px {
+                    left: -2rem;
+                    font-size: 1rem;
+                }
+            }
+
+            .aventador {
+                position: absolute;
+                color: #FFF;
+                font-size: 4rem;
+                font-family: Bebas Neue;
+                left: -2rem;
+                top: 7.5rem;
+
+                @include screen-820px {
+                    font-size: 3rem;
+                }
+
+                @include screen-500px {
+                    font-size: 2rem;
+                }
+            }
+
+            iframe {
+                width: 100%;
+                height: 44rem;
+
+                @include screen-1440px {
+                    width: 100%;
+                    height: 34rem;
+                }
+
+                @include screen-820px {
+                    height: 40rem;
+                }
+
+                @include screen-767px {
+                    width: 100%;
+                    height: 20rem;
+                }
+
+                @include screen-500px {
+                    width: 100%;
+                    height: 16rem;
+                }
+            }
+        }
+
+        .videos-details {
+            grid-row: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 3rem;
+            justify-content: space-evenly;
+
+            @include screen-1200px {
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                align-items: center;
+                row-gap: 3rem;
+            }
+
+            h2 {
+                color: #000;
+
+                @include screen-500px {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                color: #000;
+                font-family: Roboto;
+                font-weight: 500;
+                font-size: 1.4rem;
+                margin-bottom: 0;
+            }
+
+            .aventador-interior {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 40%;
+
+                @include screen-1200px {
+                    grid-row: 1;
+                    width: 100%
+                }
+
+                h2 {
+                    @include screen-1200px {
+                        padding-top: 2rem;
+                        font-size: 3rem;
+                        // color: white;
+                    }
+                }
+
+                p {
+                    @include screen-1440px {
+                        font-size: 1.2rem;
+                    }
+
+                    @include screen-990px {
+                        background-color: #FFF;
+                    }
+
+                    @include screen-767px {
+                        font-size: 1rem;
+                        color: #FFF;
+                        background-color: transparent;
+                    }
+                }
+
+                .interior {
+                    text-align: left;
+                }
+            }
+
+            .aventador-engine {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: right;
+                width: 40%;
+
+                @include screen-1200px {
+                    grid-row: 3;
+                    width: 100%;
+                }
+
+                h2 {
+                    @include screen-1200px {
+                        font-size: 3rem;
+                    }
+                }
+
+                p {
+                    @include screen-1440px {
+                        font-size: 1.2rem;
+                    }
+
+                    @include screen-767px {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            img {
+                width: 50%;
+            }
+
+            .video-img1b {
+                display: none;
+
+                @include screen-1200px {
+                    grid-row: 2;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .video-img2b {
+                display: none;
+
+                @include screen-1200px {
+                    grid-row: 4;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .video-img1 {
+                @include screen-1200px {
+                    display: none;
+                }
+            }
+
+            .video-img2 {
+                @include screen-1200px {
+                    display: none;
+                }
+            }
+        }
+    }
 }

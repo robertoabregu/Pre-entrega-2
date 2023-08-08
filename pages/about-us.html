@@ -40,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/videos.html">VIDEOS</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item-logo">
                             <img src="../images/logo-shadowfax.png"></a>
                         </li>
                         <li class="nav-item">
@@ -62,8 +62,8 @@
         </div>
         <div class="content-about-us">
             <div class="about-us-details">
-                <img src="../images/about-us-1.jpg" class="about-us-img1" alt="about us image 1">
-                <div class="about-us1">
+                <img data-aos="flip-up" src="../images/about-us-1.jpg" class="about-us-img1" alt="about us image 1">
+                <div data-aos="flip-down" class="about-us1">
                     <h2>WELCOME TO AN INNOVATIVE CONCEPT</h2>
                     <p class="about-us-1p">We pride ourselves on working with only the finest, most prestigious car
                         brands in the world. Our portfolio includes the likes of Bugatti, Ferrari, Lamborghini,
@@ -71,7 +71,7 @@
                         vehicles, we're confident that we can help you find the car of your dreams.
                     </p>
                 </div>
-                <div class="about-us2">
+                <div data-aos="flip-down" class="about-us2">
                     <p>Our experience has shown us that the caliber of cars we offer speaks for
                         itself, which is why we don't rely on traditional sales staff to promote them. Instead, we
                         ensure that all our team members possess extensive product knowledge and understand the
@@ -81,12 +81,13 @@
                         buy stock, which allows us to acquire the very best examples on offer
                     </p>
                 </div>
-                <img src="../images/about-us-2.jpg" class="about-us-img2" alt="about us image 2">
+                <img data-aos="flip-up" src="../images/about-us-2.jpg" class="about-us-img2" alt="about us image 2">
             </div>
             <div class="our-teams">
                 <h2>OUR TEAMS</h2>
-                <img src="../images/about-us-our-team.jpg" class="about-us-img3" alt="our-teams">
-                <p class="our-teams">We believe that buying a luxury vehicle should be an exciting and enjoyable
+                <img data-aos="flip-up" src="../images/about-us-our-team.jpg" class="about-us-img3" alt="our-teams">
+                <p data-aos="flip-down" class="our-teams">We believe that buying a luxury vehicle should be an exciting
+                    and enjoyable
                     experience, and our knowledgeable team is always on hand to help you find the perfect car to suit
                     your needs. Whether you're looking for a modern supercar or a classic collectible, we're confident
                     that we have something to meet your requirements.<br><br>
@@ -136,6 +137,9 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
