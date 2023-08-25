@@ -153,8 +153,13 @@
                 row-gap: 3rem;
             }
 
-            h2 {
+            .h2-interior {
                 color: #000;
+
+                @include screen-767px {
+                    color: #FFF;
+                    font-size: 2rem;
+                }
 
                 @include screen-500px {
                     font-size: 2rem;

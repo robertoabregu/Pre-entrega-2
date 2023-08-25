@@ -147,6 +147,10 @@ footer {
                 color: #FFF;
                 text-decoration: none;
 
+                @include screen-500px {
+                    font-size: .7rem;
+                }
+
                 &:hover {
                     color: #FFF;
                     font-weight: 900;

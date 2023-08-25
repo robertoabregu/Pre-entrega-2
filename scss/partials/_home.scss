@@ -81,7 +81,7 @@
     overflow: hidden;
 }
 
-.carousel {
+#carouselExampleFade1 {
     display: flex;
 
     @include screen-990px {
@@ -89,7 +89,7 @@
     }
 }
 
-.carousel2 {
+#carouselExampleFade2 {
     display: none;
 
     @include screen-990px {
