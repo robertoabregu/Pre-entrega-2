@@ -1,6 +1,6 @@
 .about-us {
     padding: 0 15%;
-    background-image: url("../images/about-us-background-2.png");
+    background-image: url("../images/about_us_background.jpg");
     background-size: auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
             grid-template-rows: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            row-gap: 2rem;
+            row-gap: 3rem;
             column-gap: 2rem;
 
             @include screen-1200px {
@@ -82,7 +82,7 @@
                 grid-template-columns: unset;
                 align-items: center;
                 justify-content: center;
-                row-gap: 2rem;
+                row-gap: 3rem;
             }
 
             .about-us-img1 {
@@ -125,6 +125,10 @@
                 grid-row: 2;
                 grid-column: 1;
                 text-align: right;
+                backdrop-filter: blur(0px) saturate(100%);
+                -webkit-backdrop-filter: blur(0px) saturate(100%);
+                background-color: rgba(255, 255, 255, 0.3);
+                border: 0px solid;
 
                 @include screen-1200px {
                     grid-row: 3;
@@ -132,12 +136,14 @@
                 }
 
                 p {
+                    color: black;
+
                     @include screen-990px {
-                        color: #FFF;
+                        color: black;
                     }
 
                     @include screen-820px {
-                        color: #FFF;
+                        color: black;
                     }
                 }
             }
@@ -149,7 +155,7 @@
             grid-template-rows: auto auto;
             align-items: center;
             justify-content: center;
-            row-gap: 2rem;
+            row-gap: 3rem;
             align-items: center;
             color: #000;
 
@@ -161,14 +167,14 @@
             h2 {
                 grid-row: 1;
                 font-size: 4rem;
-                color: #FFF;
+                color: #000;
             }
 
             p {
                 grid-row: 3;
                 text-align: center;
                 width: 100%;
-                color: #FFF;
+                color: #000;
             }
         }
 
